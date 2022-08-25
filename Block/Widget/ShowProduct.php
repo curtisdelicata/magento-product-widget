@@ -10,7 +10,7 @@
 * @package Magenest_magento233_dev
 */
 
-namespace Magenest\CustomWidget\Block\Widget;
+namespace Delicata\Product\Block\Widget;
 
 use Magento\Catalog\Api\CategoryRepositoryInterface;
 use Magento\Catalog\Block\Product\Context;
