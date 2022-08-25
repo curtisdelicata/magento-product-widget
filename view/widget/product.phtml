@@ -1,0 +1,64 @@
+<?php
+/**
+* Copyright © 2019 Magenest. All rights reserved.
+* See COPYING.txt for license details.
+*
+* Magenest_magento233_dev extension
+* NOTICE OF LICENSE
+*
+* @category Magenest
+* @package Magenest_magento233_dev
+*/
+/** @var $block Magenest\CustomWidget\Block\Widget\ShowProduct*/
+$product = $block->getProductInformation();
+?>
+<li class="product-item">                        <div class="product-item-info">
+                    <a href="/<?=$product->getName()?>.html" class="product-item-photo">
+                                <span class="product-image-container product-image-container-231">
+    <span class="product-image-wrapper">
+        <img class="product-image-photo" src="><? $product->getImage()->toHtml() ?>" loading="lazy" width="270" height="270" alt="Snobby Mushrooms"></span>
+</span>
+ <script type="text/javascript">prodImageContainers = document.querySelectorAll(".product-image-container-231");
+                    for (var i = 0; i < prodImageContainers.length; i++) {
+                        prodImageContainers[i].style.width = "270px";
+                    }
+                    prodImageContainersWrappers = document.querySelectorAll(
+                        ".product-image-container-231  span.product-image-wrapper"
+                    );
+                    for (var i = 0; i < prodImageContainersWrappers.length; i++) {
+                        prodImageContainersWrappers[i].style.paddingBottom = "100%";
+                    }</script>                            </a>
+                    <div class="product-item-details">
+                        <strong class="product-item-name">
+                            <a title="<?=$product->getName()?>" href=""<?= $product->getProductUrl()?>.html" class="product-item-link">
+                                <?=$product->getName()?>                                    </a>
+                        </strong>
+
+                        <div class="price-box price-final_price" data-role="priceBox" data-product-id="231" data-price-box="product-id-231">
+<span> <?=$product->getProductDetails() ?><</span>
+
+<span class="price-container price-final_price tax weee">
+        <span id="old-price-231-widget-product-grid" data-price-amount=" <?=$product->getFormattedPrice()?><" data-price-type="finalPrice" class="price-wrapper "><span class="price"> <?=$product->getFormattedPrice()?><</span></span>
+        </span>
+
+                        </div>
+
+                        <div class="product-item-inner">
+                            <div class="product-item-actions">
+                                <div class="actions-primary">
+                                    <form data-role="tocart-form" data-product-sku="Snobby Mushrooms" action="https://www.modopizza.co.uk/checkout/cart/add/uenc/aHR0cHM6Ly93d3cubW9kb3BpenphLmNvLnVrLw%2C%2C/product/231/" method="post">
+                                        <input type="hidden" name="product" value=" <?=$product->getId()?><">
+                                        <input type="hidden" name="uenc" value="aHR0cHM6Ly93d3cubW9kb3BpenphLmNvLnVrL2NoZWNrb3V0L2NhcnQvYWRkL3VlbmMvYUhSMGNITTZMeTkzZDNjdWJXOWtiM0JwZW5waExtTnZMblZyTHclMkMlMkMvcHJvZHVjdC8yMzEv">
+                                        <input name="form_key" type="hidden" value="mxs8SePcSi2nW0HE">                                                            <button type="submit" title="Select" class="action tocart primary">
+                                        <span>Select</span>
+                                    </button>
+                                    </form>
+                                </div>
+                                <div class="actions-secondary" data-role="add-to-links">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </li>
